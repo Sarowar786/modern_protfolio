@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-2">
             <Link href="/" className="text-2xl font-bold bg-brand-gradient bg-clip-text text-muted">
-              DEV.ALEX
+              DEV.SAROWAR
             </Link>
             <p className="mt-4 text-muted max-w-sm">
               Building modern web experiences with focus on performance, 
@@ -26,15 +26,15 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Socials</h4>
             <div className="flex gap-4">
-              <Link href="#" className="p-2 bg-card rounded-full hover:text-primary"><Github size={20} /></Link>
-              <Link href="#" className="p-2 bg-card rounded-full hover:text-primary"><Twitter size={20} /></Link>
-              <Link href="#" className="p-2 bg-card rounded-full hover:text-primary"><Linkedin size={20} /></Link>
-              <Link href="#" className="p-2 bg-card rounded-full hover:text-primary"><Mail size={20} /></Link>
+              <Link href="https://github.com/Sarowar786" className="p-2 bg-card rounded-full hover:text-primary"><Github size={20} /></Link>
+              <Link href="https://www.facebook.com/mdgolam.sarowar.942" className="p-2 bg-card rounded-full hover:text-primary"><Facebook size={20} /></Link>
+              <Link href="https://www.linkedin.com/in/md-golam-sarowar-" className="p-2 bg-card rounded-full hover:text-primary"><Linkedin size={20} /></Link>
+              <a href="mailto:sarowar2287@gmail.com" className="p-2 bg-card rounded-full hover:text-primary"><Mail size={20} /></a>
             </div>
           </div>
         </div>
         <div className="text-center text-muted text-sm pt-8 border-t border-white/5">
-          © {new Date().getFullYear()} Alex Dev. All rights reserved.
+          © {new Date().getFullYear()} Sarowar. All rights reserved.
         </div>
       </div>
     </footer>

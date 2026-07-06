@@ -2,6 +2,7 @@ import FeaturedProjects from "@/components/home/FraturesProjects";
 import Hero from "@/components/home/Hero";
 import Testimonials from "@/components/home/Testimonials";
 import { Button } from "@/components/ui/button";
+import { MoveRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
               My goal is to create products that provide value and a great user experience.
             </p>
             <Link href="/about">
-              <Button variant="outline" className="border-white/10">Read My Story</Button>
+              <Button className="border-white/10 bg-transparent hover:bg-primary cursor-pointer rounded">Read My Story <MoveRight /> </Button>
             </Link>
           </div>
           <div className="md:w-1/2 grid grid-cols-2 gap-4">

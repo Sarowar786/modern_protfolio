@@ -24,10 +24,10 @@ export default function FeaturedProjects() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
+            <h2 className="text-3xl font-bold mb-2 mt-5"> Projects</h2>
             <p className="text-muted">Selection of my best works</p>
           </div>
-          <Link href="/projects" className="text-primary hover:underline font-medium">View All Projects</Link>
+          {/* <Link href="/projects" className="text-primary hover:underline font-medium">View All Projects</Link> */}
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

@@ -3,8 +3,18 @@ import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+    const router = useRouter()
+      const handleResumeDownload = () => {
+    // Trigger the download of the resume file
+    const link = document.createElement("a");
+    link.href = "/public/Md Golam Sarowar Resume.pdf"; // Update this to your resume file path
+    link.download = "Md Golam Sarowar Resume.pdf"; // Update this to the desired file name
+    link.click();
+  };
+
   return (
     <section className="relative pt-32 pb-20 px-6 overflow-hidden">
       {/* Background Animated Blob */}
@@ -18,7 +28,7 @@ export default function Hero() {
         >
           <h2 className="text-primary font-medium mb-4">Available for Hire</h2>
           <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-            Hi, I&apos;m <span className="bg-brand-gradient bg-clip-text text-muted">Alex Smith</span>
+            Hi, I&apos;m <span className="bg-brand-gradient bg-clip-text text-muted">Md Golam Sarowar</span>
           </h1>
           <div className="text-2xl lg:text-3xl text-muted mb-8 h-12">
             <Typewriter
@@ -30,10 +40,10 @@ export default function Hero() {
             />
           </div>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-brand-gradient hover:opacity-90 px-8 py-6 text-lg">
+            <Button onClick={()=>{router.push("/projects")}} className="bg-brand-gradient hover:opacity-90 px-8 py-6 text-lg">
               View Projects <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" className="border-card bg-card px-8 py-6 text-lg">
+            <Button onClick={handleResumeDownload} className="bg-brand-gradient hover:opacity-90 px-8 py-6 text-lg">
               Download Resume <Download className="ml-2 h-5 w-5" />
             </Button>
           </div>

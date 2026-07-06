@@ -19,7 +19,7 @@ export default function AboutPage() {
               <p className="text-muted text-sm">Years Experience</p>
             </div>
             <div className="bg-card p-6 rounded-2xl text-center">
-              <h4 className="text-3xl font-bold text-primary">50+</h4>
+              <h4 className="text-3xl font-bold text-primary">40+</h4>
               <p className="text-muted text-sm">Projects Completed</p>
             </div>
           </div>
@@ -27,12 +27,12 @@ export default function AboutPage() {
 
         {/* Right: Story */}
         <div className="space-y-6">
-          <h2 className="text-4xl font-bold bg-brand-gradient bg-clip-text text-transparent inline-block">
+          <h2 className="text-4xl font-bold bg-brand-gradient bg-clip-text text-muted inline-block">
             My Journey
           </h2>
           <p className="text-muted text-lg leading-relaxed">
             I am a self-taught Full Stack Developer with a passion for building clean, 
-            performant, and user-centric web applications. My journey started in 2024 
+            performant, and user-centric web applications. My journey started in 2022 
             with curiosity about how the web works.
           </p>
           <p className="text-muted text-lg leading-relaxed">
@@ -47,11 +47,11 @@ export default function AboutPage() {
             </div>
             <div className="flex justify-between border-b border-white/5 pb-2">
               <span className="text-white font-medium">Email</span>
-              <span className="text-muted">hello@alex.dev</span>
+              <span className="text-muted">sarowar2287@gmail.com</span>
             </div>
             <div className="flex justify-between border-b border-white/5 pb-2">
               <span className="text-white font-medium">Education</span>
-              <span className="text-muted">BSc in Computer Science</span>
+              <span className="text-muted">BSc in Computer Science Engineering</span>
             </div>
           </div>
         </div>

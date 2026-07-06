@@ -13,17 +13,17 @@ const SKILL_CATEGORIES = [
   {
     title: "Backend",
     icon: <Terminal className="w-6 h-6 text-primary" />,
-    skills: ["Node.js", "Express", "Hono", "Prisma", "NextAuth"]
+    skills: ["Node.js", "Express.js", "NextAuth"]
   },
   {
     title: "Database",
     icon: <Database className="w-6 h-6 text-primary" />,
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Supabase"]
+    skills: ["MongoDB", "MySQL",  "Supabase"]
   },
   {
     title: "Tools & DevOps",
     icon: <Cpu className="w-6 h-6 text-primary" />,
-    skills: ["Git", "Docker", "AWS", "Vercel", "Postman", "Linux"]
+    skills: ["Git", "Github", "AWS", "Vercel", "Postman", "Linux", "Netlify"]
   }
 ];
 

@@ -1,21 +1,67 @@
-import { Monitor, Smartphone, Zap, Search, Shield, Settings } from "lucide-react";
+import {
+  Monitor,
+  Laptop,
+  Zap,
+  LayoutTemplate,
+  LayoutDashboard,
+  RefreshCcw,
+  Plug,
+  Bug,
+  TestTube,
+  Lightbulb,
+} from "lucide-react";
 
 const SERVICES = [
   {
     title: "Frontend Development",
-    desc: "Building responsive, fast, and interactive user interfaces using React and Next.js.",
-    icon: <Monitor className="w-10 h-10" />
+    desc: "Building responsive, modern, and interactive user interfaces with React, Next.js, and Tailwind CSS.",
+    icon: <Monitor className="w-10 h-10" />,
   },
   {
     title: "Full Stack Solutions",
-    desc: "Complete web applications from database design to deployment and scaling.",
-    icon: <Smartphone className="w-10 h-10" />
+    desc: "Developing complete web applications, from backend APIs and databases to scalable frontend experiences.",
+    icon: <Laptop className="w-10 h-10" />,
   },
   {
     title: "Performance Optimization",
-    desc: "Improving Core Web Vitals and ensuring lightning-fast load times for SEO.",
-    icon: <Zap className="w-10 h-10" />
-  }
+    desc: "Optimizing website speed, Core Web Vitals, and SEO for a faster and smoother user experience.",
+    icon: <Zap className="w-10 h-10" />,
+  },
+  {
+    title: "Landing Page",
+    desc: "Designing high-converting, responsive landing pages that help grow your business and generate leads.",
+    icon: <LayoutTemplate className="w-10 h-10" />,
+  },
+  {
+    title: "Dashboard",
+    desc: "Creating intuitive admin dashboards with charts, analytics, authentication, and real-time data.",
+    icon: <LayoutDashboard className="w-10 h-10" />,
+  },
+  {
+    title: "Website Redesign",
+    desc: "Refreshing outdated websites with modern UI/UX, improved performance, and mobile-friendly layouts.",
+    icon: <RefreshCcw className="w-10 h-10" />,
+  },
+  {
+    title: "API Integration",
+    desc: "Integrating third-party APIs, payment gateways, authentication services, and external platforms seamlessly.",
+    icon: <Plug className="w-10 h-10" />,
+  },
+  {
+    title: "Bug Fixing",
+    desc: "Identifying and resolving frontend and backend issues to ensure your application runs smoothly.",
+    icon: <Bug className="w-10 h-10" />,
+  },
+  {
+    title: "Testing & Debugging",
+    desc: "Performing thorough testing and debugging to deliver reliable, stable, and error-free applications.",
+    icon: <TestTube className="w-10 h-10" />,
+  },
+  {
+    title: "Planning & Strategy",
+    desc: "Helping define project architecture, technology stack, and development roadmap for long-term success.",
+    icon: <Lightbulb className="w-10 h-10" />,
+  },
 ];
 
 export default function ServicesPage() {
