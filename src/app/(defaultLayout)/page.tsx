@@ -18,12 +18,12 @@ export default function Hero() {
         >
           <h2 className="text-primary font-medium mb-4">Available for Hire</h2>
           <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-            Hi, I&apos;m <span className="bg-brand-gradient bg-clip-text text-transparent">Alex Smith</span>
+            Hi, I&apos;m <span className="bg-brand-gradient bg-clip-text text-muted">Alex Smith</span>
           </h1>
           <div className="text-2xl lg:text-3xl text-muted mb-8 h-12">
             <Typewriter
               options={{
-                strings: ["Full Stack Developer", "UI/UX Enthusiast", "Open Source Contributor"],
+                strings: ["Frontend Developer", "Web Developer", "Open Source Contributor"],
                 autoStart: true,
                 loop: true,
               }}
