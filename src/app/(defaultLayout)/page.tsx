@@ -1,54 +1,58 @@
-"use client";
-import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
+import FeaturedProjects from "@/components/home/FraturesProjects";
+import Hero from "@/components/home/Hero";
+import Testimonials from "@/components/home/Testimonials";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import Link from "next/link";
 
-export default function Hero() {
+export default function Home() {
   return (
-    <section className="relative pt-32 pb-20 px-6 overflow-hidden">
-      {/* Background Animated Blob */}
-      <div className="absolute top-0 -z-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-primary/20 blur-[120px] rounded-full animate-pulse" />
+    <>
+      <Hero />
+      
+      {/* Short About Section */}
+      <section className="py-20 px-6 bg-card/30">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-bold mb-6">Crafting Digital Experiences</h2>
+            <p className="text-muted text-lg mb-6 leading-relaxed">
+              I specialize in building robust backend systems and pixel-perfect frontends. 
+              My goal is to create products that provide value and a great user experience.
+            </p>
+            <Link href="/about">
+              <Button variant="outline" className="border-white/10">Read My Story</Button>
+            </Link>
+          </div>
+          <div className="md:w-1/2 grid grid-cols-2 gap-4">
+             {/* Dynamic Stats for Home */}
+             <div className="p-8 bg-background rounded-2xl border border-white/5">
+                <h3 className="text-3xl font-bold text-primary">50+</h3>
+                <p className="text-sm text-muted">Projects</p>
+             </div>
+             <div className="p-8 bg-background rounded-2xl border border-white/5">
+                <h3 className="text-3xl font-bold text-secondary">3+</h3>
+                <p className="text-sm text-muted">Years</p>
+             </div>
+          </div>
+        </div>
+      </section>
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-primary font-medium mb-4">Available for Hire</h2>
-          <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-            Hi, I&apos;m <span className="bg-brand-gradient bg-clip-text text-muted">Alex Smith</span>
-          </h1>
-          <div className="text-2xl lg:text-3xl text-muted mb-8 h-12">
-            <Typewriter
-              options={{
-                strings: ["Frontend Developer", "Web Developer", "Open Source Contributor"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-          <div className="flex flex-wrap gap-4">
-            <Button className="bg-brand-gradient hover:opacity-90 px-8 py-6 text-lg">
-              View Projects <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" className="border-card bg-card px-8 py-6 text-lg">
-              Download Resume <Download className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
-        </motion.div>
+      <FeaturedProjects />
+      <Testimonials />
 
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          className="relative flex justify-center"
-        >
-          <div className="w-80 h-80 lg:w-[450px] lg:h-[450px] rounded-3xl overflow-hidden border-2 border-card shadow-2xl">
-             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" alt="Professional Image" className="object-cover w-full h-full" />
-          </div>
-        </motion.div>
-      </div>
-    </section>
+      {/* CTA Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto bg-brand-gradient p-12 rounded-[3rem] text-center">
+          <h2 className="text-4xl font-bold mb-6">Let&apos;s build something amazing</h2>
+          <p className="text-white/80 mb-10 text-lg">
+            Ready to start your next project? Get in touch today.
+          </p>
+          <Link href="/contact">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 px-10 py-7 text-xl rounded-full">
+              Contact Me Now
+            </Button>
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
