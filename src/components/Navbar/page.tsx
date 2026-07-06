@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
   { name: "Home", href: "/" },
@@ -14,6 +15,9 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+    const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(href + "/");
 
   return (
     <nav className="fixed w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
@@ -25,7 +29,7 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map(link => (
-            <Link key={link.name} href={link.href} className="text-gray-400  hover:text-white transition-colors">
+            <Link key={link.name} href={link.href} className={`text-gray-400 hover:text-white transition-colors ${isActive(link.href) ? 'text-white' : ''}`}>
               {link.name}
             </Link>
           ))}
