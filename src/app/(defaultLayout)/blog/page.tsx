@@ -6,19 +6,22 @@ const BLOGS = [
     title: "Mastering Next.js Server Components",
     date: "Oct 12, 2024",
     category: "Tutorial",
-    img: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=500"
+    img: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=500",
+    slug: "getting-started-nextjs-tailwind",
   },
   {
     title: "Why TypeScript is Essential for Large Teams",
     date: "Sep 28, 2024",
     category: "Insight",
-    img: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=500"
+    img: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=500",
+    slug: "getting-started-nextjs-tailwind",
   },
   {
     title: "Building Beautiful UI with Tailwind CSS",
     date: "Aug 15, 2024",
     category: "Design",
-    img: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500"
+    img: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500",
+    slug: "getting-started-nextjs-tailwind",
   }
 ];
 
@@ -32,7 +35,7 @@ export default function BlogPage() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {BLOGS.map((blog, i) => (
-          <Link key={i} href={`/blog/${blog.title.toLowerCase().replace(/ /g, '-')}`}>
+          <Link key={blog.slug} href={`/blog/${blog.slug}`} className="group block">
             <Card className="bg-card border-none overflow-hidden group hover:ring-1 ring-primary transition-all">
               <div className="h-52 overflow-hidden">
                 <img src={blog.img} alt={blog.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
