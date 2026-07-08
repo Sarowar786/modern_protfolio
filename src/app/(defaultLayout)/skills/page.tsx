@@ -2,18 +2,18 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code2, Database, Layout, Terminal, Cpu, Globe } from "lucide-react";
+import { Database, Layout, Terminal, Cpu, Brain } from "lucide-react";
 
 const SKILL_CATEGORIES = [
   {
     title: "Frontend",
     icon: <Layout className="w-6 h-6 text-primary" />,
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"]
+    skills: ["JavaScript","React.js", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux", "Shedcn UI", "Headless UI", "Radix UI"]
   },
   {
     title: "Backend",
     icon: <Terminal className="w-6 h-6 text-primary" />,
-    skills: ["Node.js", "Express.js", "NextAuth"]
+    skills: ["Node.js", "Express.js", "NextAuth", "Supabase", "REST APIs"]
   },
   {
     title: "Database",
@@ -23,7 +23,12 @@ const SKILL_CATEGORIES = [
   {
     title: "Tools & DevOps",
     icon: <Cpu className="w-6 h-6 text-primary" />,
-    skills: ["Git", "Github", "AWS", "Vercel", "Postman", "Linux", "Netlify"]
+    skills: ["Git", "Github", "AWS", "Vercel", "Postman", "Linux", "Netlify","Figma", ]
+  },
+  {
+    title: "Soft Skills",
+    icon: <Brain  className="w-6 h-6 text-primary" />,
+    skills: ["Communication","Problem Solving","Leadership","Teamwork"]
   }
 ];
 

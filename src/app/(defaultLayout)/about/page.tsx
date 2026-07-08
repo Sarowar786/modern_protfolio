@@ -7,7 +7,8 @@ export default function AboutPage() {
           <div className="relative group">
             <div className="absolute -inset-4 bg-brand-gradient rounded-3xl opacity-20 blur-xl group-hover:opacity-40 transition" />
             <img 
-              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800" 
+              // src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800" 
+              src="/images/about_image.jpg"
               alt="About Me" 
               className="relative rounded-2xl w-full grayscale hover:grayscale-0 transition duration-500"
             />

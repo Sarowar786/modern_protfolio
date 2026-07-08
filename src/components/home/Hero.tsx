@@ -55,7 +55,7 @@ export default function Hero() {
           className="relative flex justify-center"
         >
           <div className="w-80 h-80 lg:w-[450px] lg:h-[450px] rounded-3xl overflow-hidden border-2 border-card shadow-2xl">
-             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800" alt="Professional Image" className="object-cover w-full h-full" />
+             <img src="/images/hero_image.jpg" alt="Professional Image" className="object-cover w-full h-full" />
           </div>
         </motion.div>
       </div>
