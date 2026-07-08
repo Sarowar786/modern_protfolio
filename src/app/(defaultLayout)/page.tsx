@@ -26,7 +26,7 @@ export default function Home() {
           <div className="md:w-1/2 grid grid-cols-2 gap-4">
              {/* Dynamic Stats for Home */}
              <div className="p-8 bg-background rounded-2xl border border-white/5">
-                <h3 className="text-3xl font-bold text-primary">50+</h3>
+                <h3 className="text-3xl font-bold text-primary">40+</h3>
                 <p className="text-sm text-muted">Projects</p>
              </div>
              <div className="p-8 bg-background rounded-2xl border border-white/5">

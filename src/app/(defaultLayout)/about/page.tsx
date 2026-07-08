@@ -16,7 +16,7 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-2 gap-4 mt-8">
             <div className="bg-card p-6 rounded-2xl text-center">
-              <h4 className="text-3xl font-bold text-primary">3+</h4>
+              <h4 className="text-3xl font-bold text-secondary">3+</h4>
               <p className="text-muted text-sm">Years Experience</p>
             </div>
             <div className="bg-card p-6 rounded-2xl text-center">

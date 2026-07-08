@@ -18,7 +18,7 @@ const SERVICES = [
     icon: <Monitor className="w-10 h-10" />,
   },
   {
-    title: "Full Stack Solutions",
+    title: "Full Stack Development",
     desc: "Developing complete web applications, from backend APIs and databases to scalable frontend experiences.",
     icon: <Laptop className="w-10 h-10" />,
   },
