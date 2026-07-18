@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com", // here is your website main domain
+    url: "https://sarowar7.vercel.app", // here is your website main domain
     siteName: "Md Golam Sarowar Portfolio",
     title: "Md Golam Sarowar | Senior Full Stack Developer",
     description:
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico", // your favicon icon
+    icon: "/images/logoN.png", // your favicon icon
     shortcut: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
