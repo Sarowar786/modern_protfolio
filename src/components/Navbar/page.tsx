@@ -12,9 +12,9 @@ const NAV_LINKS = [
   { name: "Projects", href: "/projects", delay: 0.4 },
   { name: "Skills", href: "/skills", delay: 0.5 },
   { name: "Services", href: "/services", delay: 0.6 },
-  { name: "Blog", href: "/blog", delay: 0.7 },
+  // { name: "Blog", href: "/blog", delay: 0.7 },
   // { name: "Gallery", href: "/gallery" },
-  { name: "Contact", href: "/contact", delay: 0.8 },
+  { name: "Contact", href: "/contact", delay: 0.7 },
 ];
 
 export default function Navbar() {

@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/page";
 import Footer from "@/components/Footer/page";
 import { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
+import CustomCursor from "@/components/ui/CustomCursor";
 
 
 export const metadata: Metadata = {
@@ -83,6 +84,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-background text-white antialiased`}
       >
+        <div className="bg-noise fixed inset-0 z-[-50]"></div>
+        <CustomCursor />
         <Navbar />
         <main className="min-h-screen">{children}
 

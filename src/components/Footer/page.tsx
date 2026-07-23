@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Github, Linkedin, Mail, Facebook,Check } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   const [copied, setCopied] = useState(false);
@@ -58,33 +59,40 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Socials</h4>
             <div className="flex gap-4">
-              <Link
-                href="https://github.com/Sarowar786"
-                className="p-2 bg-card rounded-full hover:text-primary"
-              >
-                <Github size={20} />
-              </Link>
-              <Link
-                href="https://www.facebook.com/mdgolam.sarowar.942"
-                className="p-2 bg-card rounded-full hover:text-primary"
-              >
-                <Facebook size={20} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/md-golam-sarowar-"
-                className="p-2 bg-card rounded-full hover:text-primary"
-              >
-                <Linkedin size={20} />
-              </Link>
-              <div className="relative inline-block group">
-                <a 
-                  href={`mailto:${email}`}
-                  onClick={handleEmailClick}
-                  className="p-2 bg-card border border-zinc-800 rounded-full hover:text-primary transition-colors duration-300 flex items-center justify-center"
+              <motion.div whileHover={{ scale: 1.1, rotate: 10, y: -5, boxShadow: "0 0 15px rgba(220,38,38,0.5)" }} className="rounded-full">
+                <Link
+                  href="https://github.com/Sarowar786"
+                  className="block p-2 bg-card rounded-full hover:text-primary transition-colors"
                 >
-                  {copied ? <Check size={20} className="text-primary animate-scale-in" /> : <Mail size={20} />}
-                </a>
-
+                  <Github size={20} />
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1, rotate: -10, y: -5, boxShadow: "0 0 15px rgba(220,38,38,0.5)" }} className="rounded-full">
+                <Link
+                  href="https://www.facebook.com/mdgolam.sarowar.942"
+                  className="block p-2 bg-card rounded-full hover:text-primary transition-colors"
+                >
+                  <Facebook size={20} />
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1, rotate: 10, y: -5, boxShadow: "0 0 15px rgba(220,38,38,0.5)" }} className="rounded-full">
+                <Link
+                  href="https://www.linkedin.com/in/md-golam-sarowar-"
+                  className="block p-2 bg-card rounded-full hover:text-primary transition-colors"
+                >
+                  <Linkedin size={20} />
+                </Link>
+              </motion.div>
+              <div className="relative inline-block group">
+                <motion.div whileHover={{ scale: 1.1, rotate: -10, y: -5, boxShadow: "0 0 15px rgba(220,38,38,0.5)" }} className="rounded-full">
+                  <a 
+                    href={`mailto:${email}`}
+                    onClick={handleEmailClick}
+                    className="block p-2 bg-card border border-zinc-800 rounded-full hover:text-primary transition-colors duration-300 flex items-center justify-center"
+                  >
+                    {copied ? <Check size={20} className="text-primary animate-scale-in" /> : <Mail size={20} />}
+                  </a>
+                </motion.div>
                 
                 <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-[10px] bg-zinc-900 text-zinc-300 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-zinc-800">
                   {copied ? "Email Copied!" : "Click to Mail / Copy"}
