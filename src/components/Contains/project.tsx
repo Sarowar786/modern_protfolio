@@ -6,12 +6,13 @@ export const projectArray = [
         link: 'https://shofy-azure.vercel.app',
         image:"/images/shopy_image.png"
     },
+    
     {
-        title: 'Long Vacation',
-        description: 'An all-in-one travel booking platform where users can discover and book resorts & vacation packages while also reserving flights for a seamless travel experience.',
-        listItem: ["Next.js", 'Tailwind css', 'TypeScript', 'Redux toolkit'],
-        link: 'https://travel-agency-app-iota.vercel.app/',
-        image:"/images/long_vacation_images.png"
+    title: "HRIS",
+    description: "Human Resource Information System for managing employee data and processes.",
+    listItem: ["React", "Tailwind","TypeScript", "MsSQL", "Express.js"],
+    image: "/images/hris.png",
+    link:"https://hrm.fortisautomation.com"
     },
     // {
     //     title: 'E-commerce Single page view',
