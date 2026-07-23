@@ -1,6 +1,6 @@
 export default function ExperiencePage() {
   const experiences = [
-    { year: "2026", role: "Frontend Developer", company: "SM Technology", desc: "Built complex frontend projects using Next.js , TypeScript , Redux toolkit, Tailwind Css and REST APIs Integration." },
+    { year: "2026", role: "Frontend Developer", company: "SM Technology", desc: "Built complex frontend projects using Next.js , TypeScript , Redux toolkit, Tailwind Css and REST APIs Integration. Colaborate with UI/UX designer and Backend developers." },
     { year: "2025", role: "Frontend Developer", company: "Fortis Group", desc: "Built High-performance in-house Web Applications with React.js and REST APIs." },
     { year: "2024", role: "Self Employed", company: "Self", desc: "Started journey with HTML/CSS/JS & React.js." },
   ];

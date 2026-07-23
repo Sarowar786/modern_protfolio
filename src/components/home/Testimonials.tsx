@@ -6,7 +6,7 @@ const REVIEWS = [
   {
     name: "Sarah Johnson",
     role: "CEO at StartupX",
-    text: "Alex delivered our MVP in record time. The code quality is top-notch and the UI is beautiful.",
+    text: "Sarowar delivered our project in record time. The code quality is top-notch and the UI is beautiful.",
     img: "https://i.pravatar.cc/150?u=sarah"
   },
   {

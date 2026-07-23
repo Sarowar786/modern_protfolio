@@ -5,12 +5,12 @@ export default function AboutPage() {
         {/* Left: Image & Stats */}
         <div>
           <div className="relative group">
-            <div className="absolute -inset-4 bg-brand-gradient rounded-3xl opacity-20 blur-xl group-hover:opacity-40 transition" />
+            <div className="absolute -inset-4 rounded-3xl opacity-20 blur-xl group-hover:opacity-40 transition" />
             <img 
               // src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800" 
               src="/images/about_image.jpg"
               alt="About Me" 
-              className="relative rounded-2xl w-full grayscale hover:grayscale-0 transition duration-500"
+              className="relative rounded-2xl w-full hover:grayscale-0 transition duration-500"
             />
           </div>
           
@@ -51,8 +51,8 @@ export default function AboutPage() {
               <span className="text-muted">sarowar2287@gmail.com</span>
             </div>
             <div className="flex justify-between border-b border-white/5 pb-2">
-              <span className="text-white font-medium">Education</span>
-              <span className="text-muted">BSc in Computer Science Engineering</span>
+              <span className="text-white font-medium pr-5 md:pr-0">Education</span>
+              <span className="text-muted ">BSc in Computer Science Engineering</span>
             </div>
           </div>
         </div>

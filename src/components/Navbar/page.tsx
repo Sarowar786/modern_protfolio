@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
@@ -36,7 +35,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden md:flex items-center gap-2 lg:gap-5">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.name}
